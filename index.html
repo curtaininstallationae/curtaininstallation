@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtain Installation Dubai | Expert Fitting Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #758A93;
+            --secondary: #ECD5BC;
+            --accent: #E9B63B;
+            --dark: #2c3e50;
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+            padding: 120px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1615873968403-89e068629265?w=1200') center/cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: var(--accent);
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(233, 182, 59, 0.4);
+            animation: fadeInUp 1s ease 0.4s backwards;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(233, 182, 59, 0.6);
+            background: #f5c84d;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .contact-bar {
+            background: var(--secondary);
+            padding: 20px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--dark);
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .contact-bar a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .contact-bar a:hover {
+            color: var(--accent);
+        }
+
+        .intro-section {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .intro-section p {
+            font-size: 1.15em;
+            line-height: 1.9;
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto 25px;
+            text-align: justify;
+        }
+
+        .section {
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        .section:nth-child(even) {
+            background: var(--light);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .section-image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .section-image:hover {
+            transform: scale(1.03);
+        }
+
+        .section-image img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .section-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: var(--primary);
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section-content p {
+            font-size: 1.1em;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .section-content a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .section-content a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--accent);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: white;
+            font-size: 2.8em;
+            margin-bottom: 30px;
+        }
+
+        .contact-section h2::after {
+            background: var(--accent);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item h3 {
+            color: var(--accent);
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .contact-item p {
+            font-size: 1.1em;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .contact-item a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: var(--accent);
+        }
+
+        .resources-section {
+            background: var(--secondary);
+            padding: 60px 20px;
+        }
+
+        .resources-section h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 40px;
+        }
+
+        .resources-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .resource-link {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .resource-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateX(10px);
+        }
+
+        .resource-link::before {
+            content: '📄';
+            font-size: 1.5em;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .section-header {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-bar">
+        📞 <a href="tel:+971567555833">+971 567 555 833</a> | 
+        ✉️ <a href="mailto:info@curtaininstallation.ae">info@curtaininstallation.ae</a> | 
+        📍 Al Quoz 1st, Dubai, UAE
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Professional Curtain Installation Dubai Services</h1>
+            <p>Transform your space with expert curtain fitting solutions tailored for luxury homes, villas, and modern offices across Dubai</p>
+            <a href="https://curtaininstallation.ae/" class="cta-button">Explore Our Services</a>
+        </div>
+    </div>
+
+    <div class="intro-section">
+        <div class="container">
+            <p>Dubai's architectural elegance demands equally sophisticated interior solutions, and nothing completes a luxury space quite like professionally installed curtains. Whether you're furnishing a sprawling villa in Emirates Hills or a contemporary apartment in Downtown Dubai, our curtain installation Dubai services bring together precision craftsmanship, premium materials, and years of expertise to create stunning window treatments that enhance both aesthetics and functionality. Our team understands the unique requirements of Dubai's climate and lifestyle, offering solutions that control harsh sunlight while maintaining the refined elegance that defines modern living in this vibrant city.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-image">
+                    <img src="https://m.media-amazon.com/images/I/61tgjHYmgRL.jpg" alt="Blackout Curtains Installation">
+                </div>
+                <div class="section-content">
+                    <h2>Premium Blackout Curtains Installation for Complete Privacy</h2>
+                    <p>Living in Dubai means dealing with intense sunlight that can disrupt your sleep and increase indoor temperatures significantly. Our <a href="https://curtaininstallation.ae/blackout-curtains-dubai/">blackout curtains installation</a> service provides the perfect solution for bedrooms, nurseries, and home theaters where light control is essential. These specialized curtains are crafted from dense, light-blocking fabrics that eliminate up to 99% of incoming light, creating an ideal environment for rest and relaxation. Beyond light control, blackout curtains also offer excellent thermal insulation, helping reduce cooling costs during Dubai's scorching summer months while providing the privacy and tranquility that every home deserves.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-content">
+                    <h2>Elegant Sheer Curtains Dubai for Natural Light and Sophistication</h2>
+                    <p>For spaces that celebrate natural light while maintaining a soft, elegant atmosphere, our <a href="https://curtaininstallation.ae/sheer-curtains-dubai/">sheer curtains Dubai</a> collection offers the perfect balance of openness and privacy. These delicate, translucent fabrics filter harsh Dubai sunlight into a gentle, ambient glow that enhances your interior aesthetics without compromising on brightness. Sheer curtains work beautifully in living rooms, dining areas, and office spaces where you want to create an airy, welcoming environment. Our expert installers ensure these lightweight fabrics hang with graceful fluidity, creating sophisticated drapes that move beautifully with the slightest breeze while complementing your existing décor with timeless elegance.</p>
+                </div>
+                <div class="section-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5JYTSMYyTPhQBcoZxxQx5b1LGmFCaSdKtYw&s" alt="Sheer Curtains Dubai">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7dZ5fPp-H-qHcTjaN6ZSD5DLyfmuC19pbgg&s" alt="Wave Curtains Dubai">
+                </div>
+                <div class="section-content">
+                    <h2>Contemporary Wave Curtains Dubai for Modern Living Spaces</h2>
+                    <p>Embrace minimalist sophistication with our <a href="https://curtaininstallation.ae/wave-curtains-dubai/">wave curtains Dubai</a> installation services, designed for homeowners who appreciate clean lines and contemporary aesthetics. Wave curtains feature a unique S-shaped wave pattern that creates continuous, flowing folds across your windows, offering a sleek alternative to traditional pleated styles. This modern curtain fixing Dubai solution operates smoothly on specialized tracks, making them ideal for large windows and sliding doors common in Dubai villas and penthouses. The seamless appearance and effortless operation of wave curtains bring a touch of European elegance to your interiors while providing excellent light control and privacy when needed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-content">
+                    <h2>Smart Motorized Curtains Installation for Ultimate Convenience</h2>
+                    <p>Experience the pinnacle of modern luxury with our <a href="https://curtaininstallation.ae/motorized-curtains-dubai/">motorized curtains installation</a> and electric curtains installation services. These innovative systems allow you to control your window treatments with the touch of a button, smartphone app, or voice commands through smart home integration. Motorized curtains are particularly valuable in Dubai's smart villas and high-rise apartments, where they can be programmed to open and close automatically based on time of day or sunlight intensity. Our technicians handle complete installation including wiring, motor setup, and integration with your existing home automation systems, ensuring whisper-quiet operation and reliable performance that enhances both convenience and energy efficiency throughout your property.</p>
+                </div>
+                <div class="section-image">
+                    <img src="https://blackoutcurtain.ae/wp-content/uploads/2024/10/Premium-Motorized-Curtains-in-Dubai-8.webp" alt="Motorized Curtains Installation">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-image">
+                    <img src="https://api.sedarglobal.com/uploads/100001/lifestyle/1698151728_032103a1ef337495bf57.webp" alt="Eyelet Curtains Dubai">
+                </div>
+                <div class="section-content">
+                    <h2>Classic Eyelet Curtains Installation for Timeless Appeal</h2>
+                    <p>Our eyelet curtains installation and <a href="https://curtaininstallation.ae/pinch-pleat-curtains-dubai/">eyelet curtains Dubai</a> services deliver the perfect combination of functionality and classic design. These curtains feature reinforced metal rings that slide smoothly along the curtain rod, creating uniform, elegant folds that remain consistent even after repeated use. Eyelet curtains are an excellent choice for bedrooms and living spaces where you want easy operation without compromising on style. Whether paired with blockout fabrics for complete privacy or lightweight materials for a breezy feel, eyelet curtains offer versatile beauty that complements both traditional and contemporary interiors throughout Dubai's diverse residential landscape.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-content">
+                    <h2>Sophisticated Pinch Pleat Curtain Dubai for Formal Elegance</h2>
+                    <p>Add a touch of formal grandeur to your interiors with our pinch pleat curtain Dubai installation services. These meticulously crafted curtains feature groups of pleats pinched together at regular intervals, creating a structured, tailored appearance that exudes luxury and refinement. Pinch pleat curtains hang beautifully with substantial weight and volume, making them ideal for <a href="https://curtaininstallation.ae/floor-to-ceiling-curtains-dubai/">floor-to-ceiling windows</a> in formal dining rooms, master bedrooms, and executive offices. Our skilled installers ensure precise measurements and perfect hanging, so your pinch pleat curtains maintain their elegant drape and sophisticated silhouette for years to come, becoming a defining feature of your interior design.</p>
+                </div>
+                <div class="section-image">
+                    <img src="https://api.sedarglobal.com/uploads/100001/lifestyle/1709554078_3b9a1062bf8000bdd7f9.webp" alt="Pinch Pleat Curtains">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBIFbrPMzAL3yR_G26Q2UjfBCFaXwz1XRXSQ&s" alt="Villa Curtains Dubai">
+                </div>
+                <div class="section-content">
+                    <h2>Custom Villa Curtains Dubai Tailored to Your Lifestyle</h2>
+                    <p>Dubai's luxury villas deserve window treatments that match their architectural magnificence, and our <a href="https://curtaininstallation.ae/villa-curtains-dubai/">custom villa curtains Dubai</a> service delivers exactly that. We specialize in creating bespoke curtain solutions for sprawling properties with multiple rooms, high ceilings, and expansive windows that require careful planning and expert execution. From selecting premium fabrics that withstand Dubai's climate to designing layered treatments that combine sheer and blackout options, our villa curtains Dubai specialists work closely with you to understand your aesthetic preferences and functional needs. Every measurement is precise, every installation is meticulous, ensuring your villa's curtains enhance its grandeur while providing the privacy, light control, and thermal comfort essential for comfortable living.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-content">
+                    <h2>Professional Apartment Curtains Dubai for Urban Living</h2>
+                    <p>Urban apartments in Dubai Marina, Business Bay, and Downtown require thoughtful curtain solutions that maximize space while delivering style and functionality. Our <a href="https://curtaininstallation.ae/apartment-curtains-dubai/">apartment curtains Dubai</a> services focus on space-efficient designs that enhance natural light in smaller rooms while providing privacy in the city's dense residential towers. We understand the unique challenges of apartment living, from limited wall space to specific building regulations, and our curtain fixing Dubai team works efficiently to install your chosen treatments with minimal disruption. Whether you prefer the modern simplicity of wave curtains or the light-filtering elegance of sheer fabrics, we create personalized solutions that transform your apartment into a comfortable, stylish sanctuary above the city.</p>
+                </div>
+                <div class="section-image">
+                    <img src="https://janovic.com/wp-content/uploads/2024/02/how-to-choose-modern-curtains-and-drapes-for-any-space-1200px.jpg" alt="Apartment Curtains Dubai">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px;">Why Choose Our Curtain Installation Dubai Services</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Expert Craftsmanship</h3>
+                    <p>Our team brings years of specialized experience in curtain installation Dubai, ensuring every project meets the highest standards of quality and precision.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Premium Materials</h3>
+                    <p>We source only the finest fabrics and hardware that withstand Dubai's climate while maintaining their beauty and functionality for years.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Customized Solutions</h3>
+                    <p>From custom villa curtains Dubai to apartment installations, we tailor every project to your unique space, style, and requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fast & Reliable Service</h3>
+                    <p>We respect your time with punctual appointments, efficient installations, and same-day curtain fixing Dubai services when urgency demands.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Complete Warranty</h3>
+                    <p>All our installations come with comprehensive service warranties, giving you confidence in the durability and quality of our workmanship.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden costs or surprise charges—just honest, competitive pricing for professional curtain installation services throughout Dubai.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="container">
+            <h2>Ready to Transform Your Space?</h2>
+            <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto 40px;">Contact our expert team today for professional curtain installation Dubai services that combine quality, style, and lasting value.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+971567555833">+971 567 555 833</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@curtaininstallation.ae">info@curtaininstallation.ae</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Address</h3>
+                    <p>Al Quoz 1st, Dubai, UAE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="resources-section">
+        <div class="container">
+            <h2>Additional Resources</h2>
+            <div class="resources-links">
+                <a href="https://docs.google.com/document/d/e/2PACX-1vRN7a3Yv71VxfV8Xe5ORhx8JbInKToiJNm69tKzY3Aex1KW6evVcPb1E1sv9NJ9lEAj73lmCchW1Tww/pub" class="resource-link" target="_blank">Curtain Installation Guide & Best Practices</a>
+                <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRgFXwdI9ChVruOZpS4m6gpRcM45JnaYEbkMpbgnWyPusUk0hetS42f3VypGdRVGuHs19zcV49jRrpV/pubhtml" class="resource-link" target="_blank">Service Pricing & Package Comparison</a>
+                <a href="https://docs.google.com/presentation/d/e/2PACX-1vRCa5R2UaVcHgY0LzapLEk2nZV5eCIX0LE2OUSy5tKgPExgFCrcXz1_gH9ipgmseatejAXChFtNwFQe/pub?start=false&loop=false&delayms=3000" class="resource-link" target="_blank">Our Portfolio & Installation Showcase</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8_msqIuWA3ly4t_gHDbkFBea6IGXyGYi47oT4CT7W74C2uA/viewform" class="resource-link" target="_blank">Request Free Consultation & Quote</a>
+                <a href="https://docs.google.com/drawings/d/1XhdDPU1pWFcPJ0paXkv9JxJ-f5_1MVgs7L8y5wWfTmc/view" class="resource-link" target="_blank">Curtain Style Selection Visual Guide</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Curtain Installation Dubai. All rights reserved. | Professional curtain fixing Dubai services for homes and offices.</p>
+    </footer>
+</body>
+</html>
